@@ -1144,7 +1144,6 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1450978836718957');
   fbq('track', 'PageView');
-  fbq('track', 'ViewContent');
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1450978836718957&ev=PageView&noscript=1"
@@ -1760,6 +1759,17 @@
       const scrollY = window.scrollY;
       if (heroBg && scrollY < window.innerHeight * 1.5) {
         heroBg.style.transform = `translateY(${scrollY * 0.35}px)`;
+      }
+    }, { passive: true });
+
+    /* ---- Meta Pixel ViewContent on scroll ---- */
+    let pixelViewContentFired = false;
+    window.addEventListener('scroll', () => {
+      if (!pixelViewContentFired && window.scrollY > 50) {
+        pixelViewContentFired = true;
+        if (typeof fbq === 'function') {
+          fbq('track', 'ViewContent');
+        }
       }
     }, { passive: true });
   </script>
