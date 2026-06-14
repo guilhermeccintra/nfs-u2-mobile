@@ -19,9 +19,9 @@
       --neon-green: #00ff88;
       --neon-green-dim: #00cc6a;
       --neon-green-glow: rgba(0, 255, 136, 0.4);
-      --gold: #ffd700;
-      --gold-dim: #c9a227;
-      --gold-glow: rgba(255, 215, 0, 0.35);
+      --gold: #00b4ff;
+      --gold-dim: #0088cc;
+      --gold-glow: rgba(0, 180, 255, 0.35);
       --blue-dark: #0d1b3e;
       --blue-neon: #00b4ff;
       --blue-glow: rgba(0, 180, 255, 0.3);
@@ -30,8 +30,8 @@
       --border: rgba(0, 255, 136, 0.15);
       --card-bg: rgba(15, 16, 24, 0.8);
       --gradient-hero: linear-gradient(135deg, #050507 0%, #0a1628 40%, #0f0a20 70%, #050507 100%);
-      --font-display: 'Orbitron', sans-serif;
-      --font-body: 'Rajdhani', sans-serif;
+      --font-display: 'Inter', sans-serif;
+      --font-body: 'Inter', sans-serif;
       --font-ui: 'Inter', sans-serif;
     }
 
@@ -148,7 +148,7 @@
       background:
         radial-gradient(ellipse 80% 60% at 50% 120%, rgba(0, 255, 136, 0.12) 0%, transparent 70%),
         radial-gradient(ellipse 60% 50% at 80% 20%, rgba(0, 100, 255, 0.1) 0%, transparent 60%),
-        radial-gradient(ellipse 40% 40% at 20% 80%, rgba(255, 215, 0, 0.06) 0%, transparent 60%);
+        radial-gradient(ellipse 40% 40% at 20% 80%, rgba(0, 180, 255, 0.06) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-bg-image {
@@ -218,7 +218,7 @@
     }
     .hero-title .line-3 {
       color: var(--gold);
-      text-shadow: 0 0 30px var(--gold-glow), 0 0 60px rgba(255,215,0,0.2);
+      text-shadow: 0 0 30px var(--gold-glow), 0 0 60px rgba(0,180,255,0.2);
     }
     @keyframes gradientText {
       0% { background-position: 0% 50%; }
@@ -322,11 +322,11 @@
     .btn-primary:active { transform: translateY(0) scale(0.99); }
 
     .btn-gold {
-      background: linear-gradient(135deg, var(--gold), #e6c200, var(--gold));
-      box-shadow: 0 0 30px var(--gold-glow), 0 0 60px rgba(255,215,0,0.15);
+      background: linear-gradient(135deg, var(--gold), #0088cc, var(--gold));
+      box-shadow: 0 0 30px var(--gold-glow), 0 0 60px rgba(0,180,255,0.15);
     }
     .btn-gold:hover {
-      box-shadow: 0 0 50px rgba(255,215,0,0.7), 0 0 90px rgba(255,215,0,0.3);
+      box-shadow: 0 0 50px rgba(0,180,255,0.7), 0 0 90px rgba(0,180,255,0.3);
     }
 
     .hero-seals {
@@ -672,7 +672,7 @@
     }
     .testimonial-card {
       background: rgba(10,11,16,0.9);
-      border: 1px solid rgba(255,215,0,0.15);
+      border: 1px solid rgba(0,180,255,0.15);
       border-radius: 12px;
       padding: 24px;
       position: relative;
@@ -684,13 +684,13 @@
       position: absolute;
       top: -10px; right: 16px;
       font-size: 5rem;
-      color: rgba(255,215,0,0.06);
+      color: rgba(0,180,255,0.06);
       font-family: Georgia, serif;
       line-height: 1;
     }
     .testimonial-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 50px rgba(0,0,0,0.4), 0 0 20px rgba(255,215,0,0.08);
+      box-shadow: 0 16px 50px rgba(0,0,0,0.4), 0 0 20px rgba(0,180,255,0.08);
     }
     .testimonial-stars { color: var(--gold); font-size: 1rem; margin-bottom: 12px; letter-spacing: 2px; }
     .testimonial-text {
@@ -742,20 +742,20 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(255,215,0,0.06) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(0,180,255,0.06) 0%, transparent 70%);
     }
 
     .offer-box {
       max-width: 620px;
       margin: 0 auto;
       background: rgba(10,11,16,0.9);
-      border: 1px solid rgba(255,215,0,0.3);
+      border: 1px solid rgba(0,180,255,0.3);
       border-radius: 20px;
       padding: 50px 40px;
       text-align: center;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 0 80px rgba(255,215,0,0.1), 0 30px 80px rgba(0,0,0,0.6);
+      box-shadow: 0 0 80px rgba(0,180,255,0.1), 0 30px 80px rgba(0,0,0,0.6);
     }
     .offer-box::before {
       content: '';
@@ -793,7 +793,7 @@
       font-size: clamp(4rem, 15vw, 7rem);
       font-weight: 900;
       color: var(--gold);
-      text-shadow: 0 0 40px var(--gold-glow), 0 0 80px rgba(255,215,0,0.2);
+      text-shadow: 0 0 40px var(--gold-glow), 0 0 80px rgba(0,180,255,0.2);
       line-height: 1;
       margin: 10px 0;
       letter-spacing: -0.02em;
@@ -984,7 +984,7 @@
       background:
         radial-gradient(ellipse 60% 70% at 50% 50%, rgba(0,255,136,0.07) 0%, transparent 70%),
         radial-gradient(ellipse 40% 40% at 20% 20%, rgba(0,100,255,0.05) 0%, transparent 60%),
-        radial-gradient(ellipse 30% 40% at 80% 80%, rgba(255,215,0,0.04) 0%, transparent 60%);
+        radial-gradient(ellipse 30% 40% at 80% 80%, rgba(0,180,255,0.04) 0%, transparent 60%);
     }
     .final-cta-content { position: relative; z-index: 1; }
     .final-cta .btn-gold {
@@ -1193,44 +1193,11 @@
         </video>
       </div>
 
-      <div class="hero-pills">
-        <span class="hero-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="#00ff88"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-          SEM internet
-        </span>
-        <span class="hero-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="#00ff88"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-          SEM mensalidade
-        </span>
-        <span class="hero-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" color="#00ff88"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-          SEM complicação
-        </span>
-      </div>
-
-      <a href="https://go.perfectpay.com.br/PPU38CQD1MI" class="btn-primary" id="hero-cta-btn" target="_blank" rel="noopener noreferrer">
+      <div class="hero-price" style="margin-top: 32px; margin-bottom: 12px; font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; color: var(--gold);">POR APENAS R$ 10,00</div>
+      <a href="https://ggcheckout.app/checkout/v5/LHwkFjJhF2nE61RRRiVF" class="btn-primary" id="hero-cta-btn" target="_blank" rel="noopener noreferrer">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
         QUERO JOGAR AGORA
       </a>
-
-      <div class="hero-seals">
-        <div class="hero-seal">
-          <span class="check-icon">✓</span>
-          Compatível com Android
-        </div>
-        <div class="hero-seal">
-          <span class="check-icon">✓</span>
-          Compatível com iPhone
-        </div>
-        <div class="hero-seal">
-          <span class="check-icon">✓</span>
-          Instalação rápida
-        </div>
-        <div class="hero-seal">
-          <span class="check-icon">✓</span>
-          Suporte incluído
-        </div>
-      </div>
     </div>
 
 
@@ -1257,41 +1224,25 @@
   <!-- ============================== -->
   <section class="section benefits-section" id="beneficios">
     <div class="container text-center">
-      <div class="section-tag fade-in">Por que todo mundo está baixando</div>
       <h2 class="section-title fade-in">
-        POR QUE TANTA GENTE<br/><span class="text-neon">ESTÁ BAIXANDO?</span>
+        TUDO QUE VOCÊ PRECISA <span class="text-neon">SABER</span>
       </h2>
 
-      <div class="benefits-grid">
+      <div class="benefits-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
         <div class="benefit-card fade-in">
-          <span class="benefit-icon">🏎️</span>
-          <div class="benefit-title">Modo Carreira Clássico</div>
-          <p class="benefit-desc">Personalize seus carros, participe de corridas e evolua sua garagem — 100% fiel ao jogo original do PlayStation 2.</p>
-        </div>
-        <div class="benefit-card fade-in fade-in-delay-1">
-          <span class="benefit-icon">🌎</span>
-          <div class="benefit-title">Jogue em Qualquer Lugar</div>
-          <p class="benefit-desc">Não precisa de conexão constante com a internet. Jogue onde e quando quiser, no ônibus, viagem ou em casa.</p>
-        </div>
-        <div class="benefit-card fade-in fade-in-delay-2">
-          <span class="benefit-icon">⚡</span>
-          <div class="benefit-title">Instalação Simples</div>
-          <p class="benefit-desc">Receba acesso imediato após a compra. O processo de instalação é rápido e totalmente guiado pelo nosso suporte.</p>
-        </div>
-        <div class="benefit-card fade-in fade-in-delay-1">
           <span class="benefit-icon">📱</span>
-          <div class="benefit-title">Funciona no Celular</div>
-          <p class="benefit-desc">Experiência otimizada para dispositivos móveis Android e iPhone. Controles adaptados para a tela touch.</p>
+          <div class="benefit-title">Android 10 ou superior</div>
+          <p class="benefit-desc">Totalmente compatível com a grande maioria dos aparelhos Android modernos.</p>
+        </div>
+        <div class="benefit-card fade-in fade-in-delay-1">
+          <span class="benefit-icon">🍎</span>
+          <div class="benefit-title">iPhone XR ou superior</div>
+          <p class="benefit-desc">Experiência otimizada e sem travamentos para usuários do ecossistema iOS.</p>
         </div>
         <div class="benefit-card fade-in fade-in-delay-2">
-          <span class="benefit-icon">🎮</span>
-          <div class="benefit-title">Nostalgia Garantida</div>
-          <p class="benefit-desc">Reviva a sensação do clássico Underground 2 com toda a trilha sonora, carros e corridas que você amava.</p>
-        </div>
-        <div class="benefit-card fade-in fade-in-delay-3">
           <span class="benefit-icon">🛠️</span>
-          <div class="benefit-title">Suporte Incluso</div>
-          <p class="benefit-desc">Receba ajuda caso tenha qualquer dificuldade. Nossa equipe está disponível para garantir sua experiência.</p>
+          <div class="benefit-title">Instalação passo a passo</div>
+          <p class="benefit-desc">Processo rápido e simples. Caso tenha dúvida, nosso suporte irá ajudar em cada etapa.</p>
         </div>
       </div>
     </div>
@@ -1348,88 +1299,6 @@
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- ============================== -->
-  <!-- TESTIMONIALS SECTION           -->
-  <!-- ============================== -->
-  <section class="section testimonials-section" id="depoimentos">
-    <div class="container text-center">
-      <div class="section-tag fade-in">O que os jogadores dizem</div>
-      <h2 class="section-title fade-in">
-        MAIS DE <span class="text-gold">2.400 JOGADORES</span><br/>JÁ APROVARAM
-      </h2>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Instalei em poucos minutos e funcionou perfeitamente. Não acreditei que daria tão certo no celular."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">RL</div>
-            <div>
-              <div class="testimonial-name">Rafael L.</div>
-              <div class="testimonial-verified">✓ Compra verificada</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in fade-in-delay-1">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Voltei para minha adolescência. Muito bom. Vale cada centavo. A qualidade do jogo é incrível no celular."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MS</div>
-            <div>
-              <div class="testimonial-name">Marcos S.</div>
-              <div class="testimonial-verified">✓ Compra verificada</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in fade-in-delay-2">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Pelo preço vale muito a pena. R$10 é nada perto da diversão que o jogo oferece. Recomendo demais!"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">JB</div>
-            <div>
-              <div class="testimonial-name">João B.</div>
-              <div class="testimonial-verified">✓ Compra verificada</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in fade-in-delay-1">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Rodou sem travamentos no meu celular. Ficou surpreso com a fluidez. Melhor do que esperava."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">TF</div>
-            <div>
-              <div class="testimonial-name">Thiago F.</div>
-              <div class="testimonial-verified">✓ Compra verificada</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in fade-in-delay-2">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Instalação simples e suporte respondeu rápido. Resolveram minha dúvida em menos de 10 minutos."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AC</div>
-            <div>
-              <div class="testimonial-name">Ana C.</div>
-              <div class="testimonial-verified">✓ Compra verificada</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in fade-in-delay-3">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Comprei com desconfiança mas fui surpreendido. O jogo funciona perfeitamente e a trilha sonora é incrível."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">PO</div>
-            <div>
-              <div class="testimonial-name">Pedro O.</div>
-              <div class="testimonial-verified">✓ Compra verificada</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <div class="divider"></div>
 
@@ -1461,13 +1330,14 @@
           </div>
         </div>
 
-        <a href="https://go.perfectpay.com.br/PPU38CQD1MI" class="btn-primary btn-gold" id="offer-cta-btn" target="_blank" rel="noopener noreferrer" style="width:100%;max-width:420px;font-size:1rem;padding:20px 32px;">
+        <a href="https://ggcheckout.app/checkout/v5/LHwkFjJhF2nE61RRRiVF" class="btn-primary btn-gold" id="offer-cta-btn" target="_blank" rel="noopener noreferrer" style="width:100%;max-width:420px;font-size:1rem;padding:20px 32px;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
           QUERO JOGAR AGORA POR R$ 10,00
         </a>
 
         <div class="payment-icons">
           <div class="payment-icon">🏦 PIX</div>
+          <div class="payment-icon">💳 CARTÃO</div>
         </div>
         <div class="payment-safe">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1595,13 +1465,14 @@
           Faça seu pedido agora e receba acesso imediato ao Need for Speed Underground 2 Mobile.
         </p>
 
-        <a href="https://go.perfectpay.com.br/PPU38CQD1MI" class="btn-primary btn-gold fade-in fade-in-delay-2" id="final-cta-btn" target="_blank" rel="noopener noreferrer" style="font-size:1.05rem;padding:22px 44px;">
+        <a href="https://ggcheckout.app/checkout/v5/LHwkFjJhF2nE61RRRiVF" class="btn-primary btn-gold fade-in fade-in-delay-2" id="final-cta-btn" target="_blank" rel="noopener noreferrer" style="font-size:1.05rem;padding:22px 44px;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
           QUERO BAIXAR AGORA POR R$ 10,00
         </a>
 
         <div class="payment-icons" style="margin-top:20px;">
           <div class="payment-icon">🏦 PIX</div>
+          <div class="payment-icon">💳 CARTÃO</div>
         </div>
         <div class="payment-safe" style="margin-top:12px;">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1631,7 +1502,7 @@
       <div class="sticky-cta-label">Oferta especial</div>
       <div class="sticky-cta-price">R$ 10,00</div>
     </div>
-    <a href="https://go.perfectpay.com.br/PPU38CQD1MI" class="btn-primary" id="sticky-cta-btn" target="_blank" rel="noopener noreferrer">COMPRAR AGORA</a>
+    <a href="https://ggcheckout.app/checkout/v5/LHwkFjJhF2nE61RRRiVF" class="btn-primary" id="sticky-cta-btn" target="_blank" rel="noopener noreferrer">COMPRAR AGORA</a>
   </div>
 
   <!-- ============================== -->
@@ -1648,7 +1519,7 @@
         const width = 80 + Math.random() * 200;
         const duration = 2 + Math.random() * 3;
         const delay = Math.random() * 4;
-        const color = Math.random() > 0.6 ? 'rgba(255,215,0,0.5)' : 'rgba(0,255,136,0.5)';
+        const color = Math.random() > 0.6 ? 'rgba(0,180,255,0.5)' : 'rgba(0,255,136,0.5)';
         line.style.cssText = `
           top: ${top}%; width: ${width}px;
           background: linear-gradient(90deg, transparent, ${color}, transparent);
