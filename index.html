@@ -1116,6 +1116,8 @@
        RESPONSIVE
     ============================================ */
     @media (max-width: 768px) {
+      .hero { min-height: auto; align-items: flex-start; }
+      .hero-content { padding-top: 40px; padding-bottom: 20px; }
       .section { padding: 60px 0; }
       .benefits-grid { grid-template-columns: 1fr; }
       .security-grid { grid-template-columns: 1fr; }
@@ -1157,9 +1159,7 @@
   <!-- ============================== -->
   <div class="urgency-bar" role="banner">
     <span>🔥</span>
-    OFERTA POR TEMPO LIMITADO
-    <span>•</span>
-    DE R$ 29,90 POR APENAS R$ 10,00
+    PROMOÇÃO DO DIA • TERMINA EM <span id="urgency-countdown">00:00:00</span> (<span id="urgency-date"></span>)
     <span>•</span>
     🔥
   </div>
@@ -1643,6 +1643,32 @@
         }
       }
     }, { passive: true });
+
+    /* ---- Urgency Bar Countdown & Date ---- */
+    function updateUrgencyBar() {
+      const now = new Date();
+      const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+      const diff = endOfDay - now;
+      if (diff > 0) {
+        const h = Math.floor(diff / (1000 * 60 * 60));
+        const m = Math.floor((diff / 1000 / 60) % 60);
+        const s = Math.floor((diff / 1000) % 60);
+        const timeStr = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+        const countdownEl = document.getElementById('urgency-countdown');
+        if (countdownEl) countdownEl.textContent = timeStr;
+      }
+      
+      const dateEl = document.getElementById('urgency-date');
+      if (dateEl && !dateEl.dataset.set) {
+        const dd = String(now.getDate()).padStart(2, '0');
+        const mm = String(now.getMonth() + 1).padStart(2, '0');
+        const yyyy = now.getFullYear();
+        dateEl.textContent = `${dd}/${mm}/${yyyy}`;
+        dateEl.dataset.set = 'true';
+      }
+    }
+    setInterval(updateUrgencyBar, 1000);
+    updateUrgencyBar();
   </script>
 </body>
 </html>
